@@ -1,8 +1,17 @@
 'use client';
-import React from 'react';
-import { Building2, Smartphone, ShieldCheck } from 'lucide-react';
+
+import React, { useState } from 'react';
+import { Building2, Smartphone, ShieldCheck, Copy, Check, Download } from 'lucide-react';
 
 export default function DonateCard() {
+  const [copiedField, setCopiedField] = useState<string | null>(null);
+
+  const handleCopy = (text: string, field: string) => {
+    navigator.clipboard.writeText(text);
+    setCopiedField(field);
+    setTimeout(() => setCopiedField(null), 2000);
+  };
+
   return (
     <section id="donate" className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl shadow-xl p-6 md:p-10 border border-red-100 mb-20 scroll-mt-20">
       
@@ -27,15 +36,38 @@ export default function DonateCard() {
               <p className="text-sm text-gray-500 font-semibold mb-1">Account Holder Name</p>
               <p className="text-xl font-black text-gray-900">PENCHALA SIDHARTHA</p>
             </div>
+            
+            {/* Account Number with Copy Button */}
             <div>
               <p className="text-sm text-gray-500 font-semibold mb-1">Account Number</p>
-              <p className="text-2xl font-black text-blue-700 tracking-wider">110053574233</p>
+              <div className="flex items-center gap-3">
+                <p className="text-2xl font-black text-blue-700 tracking-wider">110053574233</p>
+                <button 
+                  onClick={() => handleCopy('110053574233', 'account')}
+                  className="p-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-all active:scale-95"
+                  title="Copy Account Number"
+                >
+                  {copiedField === 'account' ? <Check size={20} className="text-green-600" /> : <Copy size={20} className="text-gray-500" />}
+                </button>
+              </div>
             </div>
+
             <div className="flex flex-col sm:flex-row sm:gap-10 gap-5">
+              {/* IFSC Code with Copy Button */}
               <div>
                 <p className="text-sm text-gray-500 font-semibold mb-1">IFSC Code</p>
-                <p className="text-lg font-bold text-gray-900">CNRB0003607</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-lg font-bold text-gray-900">CNRB0003607</p>
+                  <button 
+                    onClick={() => handleCopy('CNRB0003607', 'ifsc')}
+                    className="p-1 bg-gray-100 hover:bg-gray-200 rounded-md transition-all active:scale-95"
+                    title="Copy IFSC Code"
+                  >
+                    {copiedField === 'ifsc' ? <Check size={16} className="text-green-600" /> : <Copy size={16} className="text-gray-500" />}
+                  </button>
+                </div>
               </div>
+              
               <div>
                 <p className="text-sm text-gray-500 font-semibold mb-1">Branch</p>
                 <p className="text-lg font-bold text-gray-900">Oorugonda</p>
@@ -60,21 +92,39 @@ export default function DonateCard() {
             <h4 className="text-2xl font-bold text-gray-900">Google Pay / PhonePe</h4>
           </div>
           
-          <div className="bg-gray-50 p-4 rounded-xl border border-gray-200 mb-6 inline-block relative z-10 shadow-inner">
-            {/* రేపు నువ్వు QR కోడ్ ఇమేజ్ ఇక్కడ రీప్లేస్ చేసుకో */}
+          <div className="bg-gray-50 p-4 rounded-xl border border-gray-200 mb-6 flex flex-col items-center relative z-10 shadow-inner">
             <img 
               src="/images/qr-code.jpg" 
               alt="UPI QR Code" 
-              className="w-48 h-48 object-contain rounded-lg bg-white"
+              className="w-48 h-48 object-contain rounded-lg bg-white mb-4"
               onError={(e) => {
                 e.currentTarget.src = "https://via.placeholder.com/200?text=QR+Code+Pending";
               }}
             />
+            {/* Download Button */}
+            <a 
+              href="/images/qr-code.jpg" 
+              download="Siddharth_Donation_QR.jpg"
+              className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-bold text-sm transition-colors shadow-sm w-full justify-center"
+            >
+              <Download size={18} />
+              QR డౌన్‌లోడ్ 
+            </a>
           </div>
           
+          {/* UPI Number with Copy Button */}
           <div className="text-center relative z-10">
-            <p className="text-sm text-gray-500 font-semibold mb-1">UPI Mobile Number</p>
-            <p className="text-3xl font-black text-green-700 tracking-widest">918331868062</p>
+            <p className="text-sm text-gray-500 font-semibold mb-2">UPI Mobile Number</p>
+            <div className="flex items-center justify-center gap-3 bg-green-50 px-4 py-2 rounded-lg border border-green-100">
+              <p className="text-3xl font-black text-green-700 tracking-widest">918331868062</p>
+              <button 
+                onClick={() => handleCopy('918331868062', 'upi')}
+                className="p-2 bg-white hover:bg-green-100 shadow-sm border border-green-200 rounded-md transition-all active:scale-95"
+                title="Copy UPI Number"
+              >
+                {copiedField === 'upi' ? <Check size={20} className="text-green-600" /> : <Copy size={20} className="text-green-700" />}
+              </button>
+            </div>
           </div>
         </div>
 
@@ -82,7 +132,7 @@ export default function DonateCard() {
 
       <div className="mt-8 bg-green-100 text-green-800 p-4 rounded-xl flex flex-col sm:flex-row items-center justify-center gap-3 text-sm font-semibold text-center border border-green-200 shadow-sm">
         <ShieldCheck className="w-6 h-6 shrink-0" />
-        <p className="text-base">100% Secure & Direct Transfer to Patient Account.</p>
+        <p className="text-base">100% Secure & Direct Transfer to Patient's Account.</p>
       </div>
 
     </section>
