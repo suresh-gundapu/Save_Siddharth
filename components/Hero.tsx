@@ -6,7 +6,12 @@ export default function Hero() {
   const presentImages = [
     "/images/after1.jpg", 
     "/images/after2.jpg",
-    "/images/after3.jpg"
+    "/images/after3.jpg",
+    "/images/after4.jpg",
+    "/images/after5.jpg",
+    "/images/after6.jpg",
+    "/images/after7.jpg"
+
   ];
   
   const [currentIndex, setCurrentIndex] = useState(0);
