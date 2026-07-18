@@ -20,8 +20,8 @@ export default function MedicalHistory() {
       hospital_te: 'ఉమాదేవి & గార్డియన్ హాస్పిటల్స్',
       hospital_en: 'Umadevi & Guardian Hospitals',
       icon: <AlertCircle className="w-5 h-5 text-orange-500" />,
-      content_te: 'మే 14న తీవ్రమైన కడుపు నొప్పి, వాంతులతో ఉమాదేవి హాస్పిటల్ లో చేరారు[cite: 1]. అల్ట్రాసౌండ్ లో పేగులు అతుక్కుపోయి మలం నిలిచిపోయిందని (Subacute Intestinal Obstruction) తేలింది[cite: 1]. వెంటనే గార్డియన్ హాస్పిటల్ లో CT స్కాన్ చేయగా, నాభి దగ్గర కుడివైపు (Right Spigelian hernia) పేగులు 3.5cm వరకు ఉబ్బి ఇరుక్కుపోయాయని నిర్ధారణ అయింది[cite: 2].',
-      content_en: 'Admitted to Umadevi Hospital on May 14 with severe abdominal pain and vomiting[cite: 1]. Ultrasound showed mildly dilated and fecal loaded small bowel loops[cite: 1]. CT scan at Guardian Hospital confirmed a Right Spigelian hernia with small bowel loops herniating and proximal dilation up to 3.5cm[cite: 2].'
+      content_te: 'మే 14న తీవ్రమైన కడుపు నొప్పి, వాంతులతో ఉమాదేవి హాస్పిటల్ లో చేరారు. అల్ట్రాసౌండ్ లో పేగులు అతుక్కుపోయి మలం నిలిచిపోయిందని (Subacute Intestinal Obstruction) తేలింది. వెంటనే గార్డియన్ హాస్పిటల్ లో CT స్కాన్ చేయగా, నాభి దగ్గర కుడివైపు (Right Spigelian hernia) పేగులు 3.5cm వరకు ఉబ్బి ఇరుక్కుపోయాయని నిర్ధారణ అయింది.',
+      content_en: 'Admitted to Umadevi Hospital on May 14 with severe abdominal pain and vomiting. Ultrasound showed mildly dilated and fecal loaded small bowel loops. CT scan at Guardian Hospital confirmed a Right Spigelian hernia with small bowel loops herniating and proximal dilation up to 3.5cm.'
     },
     {
       id: 2,
@@ -31,8 +31,8 @@ export default function MedicalHistory() {
       hospital_te: 'RVM హాస్పిటల్ (RVM Hospital)',
       hospital_en: 'RVM Hospital',
       icon: <Activity className="w-5 h-5 text-blue-500" />,
-      content_te: 'మే 15న RVM హాస్పిటల్ లో ఎమర్జెన్సీగా పొట్ట కోసి మొదటి ఆపరేషన్ (Exploratory Laparotomy) చేశారు[cite: 3]. లోపల పేగులు విపరీతంగా ఉబ్బిపోయి, డాక్టర్లు కనీసం చేతులు కూడా పెట్టలేనంత దారుణంగా ఒకదానికొకటి అతుక్కుపోయి (Dense interloop adhesions) ఉన్నాయి[cite: 3]. రక్తప్రసరణ ఆగిపోయి పూర్తిగా కుళ్ళిపోయిన (Gangrenous) రెండు చిన్నపేగు భాగాలను కత్తిరించి తీసేసి, మిగిలిన వాటిని కలిపి కుట్లు వేశారు[cite: 3].',
-      content_en: 'Emergency Exploratory Laparotomy was performed at RVM Hospital on May 15[cite: 3]. Surgeons found grossly distended gangrenous small bowel loops with dense interloop adhesions[cite: 3]. Two completely gangrenous small bowel loops were resected and an end-to-end anastomosis was performed[cite: 3].'
+      content_te: 'మే 15న RVM హాస్పిటల్ లో ఎమర్జెన్సీగా పొట్ట కోసి మొదటి ఆపరేషన్ (Exploratory Laparotomy) చేశారు. లోపల పేగులు విపరీతంగా ఉబ్బిపోయి, డాక్టర్లు కనీసం చేతులు కూడా పెట్టలేనంత దారుణంగా ఒకదానికొకటి అతుక్కుపోయి (Dense interloop adhesions) ఉన్నాయి. రక్తప్రసరణ ఆగిపోయి పూర్తిగా కుళ్ళిపోయిన (Gangrenous) రెండు చిన్నపేగు భాగాలను కత్తిరించి తీసేసి, మిగిలిన వాటిని కలిపి కుట్లు వేశారు.',
+      content_en: 'Emergency Exploratory Laparotomy was performed at RVM Hospital on May 15. Surgeons found grossly distended gangrenous small bowel loops with dense interloop adhesions. Two completely gangrenous small bowel loops were resected and an end-to-end anastomosis was performed.'
     },
     {
       id: 3,
@@ -42,8 +42,8 @@ export default function MedicalHistory() {
       hospital_te: 'RVM హాస్పిటల్ ఐసీయూ',
       hospital_en: 'RVM Hospital ICU',
       icon: <FileWarning className="w-5 h-5 text-yellow-500" />,
-      content_te: 'ఆపరేషన్ జరిగిన 5వ రోజున, లోపల కుట్లు వేసిన కింది భాగం నుండి రక్తంతో కూడిన లీకేజ్ (Hematobilious leak, clots) మొదలైంది[cite: 3]. దీనివల్ల రక్తంలో హిమోగ్లోబిన్ దారుణంగా పడిపోయింది[cite: 3]. ఈ లీకేజ్ రోజుకు 900ml నుండి 1500ml వరకు బయటకు రావడం గమనించి, ఆ ద్రవాన్ని అంచనా వేయడానికి తాత్కాలికంగా ఒక బ్యాగ్ అమర్చారు[cite: 3].',
-      content_en: 'On post-operative day 5, a hematobilious leak with clots emerged from the lower suture site[cite: 3]. Hemoglobin levels dropped significantly due to this[cite: 3]. A temporary stoma bag was placed to quantify the leak, which was around 900ml to 1500ml daily[cite: 3].'
+      content_te: 'ఆపరేషన్ జరిగిన 5వ రోజున, లోపల కుట్లు వేసిన కింది భాగం నుండి రక్తంతో కూడిన లీకేజ్ (Hematobilious leak, clots) మొదలైంది. దీనివల్ల రక్తంలో హిమోగ్లోబిన్ దారుణంగా పడిపోయింది. ఈ లీకేజ్ రోజుకు 900ml నుండి 1500ml వరకు బయటకు రావడం గమనించి, ఆ ద్రవాన్ని అంచనా వేయడానికి తాత్కాలికంగా ఒక బ్యాగ్ అమర్చారు.',
+      content_en: 'On post-operative day 5, a hematobilious leak with clots emerged from the lower suture site. Hemoglobin levels dropped significantly due to this. A temporary stoma bag was placed to quantify the leak, which was around 900ml to 1500ml daily.'
     },
     {
       id: 4,
@@ -53,8 +53,8 @@ export default function MedicalHistory() {
       hospital_te: 'RVM హాస్పిటల్',
       hospital_en: 'RVM Hospital',
       icon: <HeartCrack className="w-5 h-5 text-red-600" />,
-      content_te: 'పరిస్థితి విషమించడంతో 28 మే న మళ్ళీ పొట్ట కోశారు (Re-exploration)[cite: 3]. అప్పటికే కడుపు కండరాలు (Rectus sheath) ఇన్ఫెక్షన్ కి గురై డ్యామేజ్ అయ్యాయి, ఎడమవైపు డయాఫ్రమ్ కింద చీము (Cheesy pus) పేరుకుపోయింది[cite: 3]. ముందు వేసిన కుట్లు రెండు చోట్లా విడిపోవడంతో, ఆ భాగాలను మళ్ళీ కత్తిరించి రెండు చోట్ల కొత్తగా కుట్లు వేశారు[cite: 3]. పేగులకు విశ్రాంతి ఇవ్వడానికి జీర్ణాశయం కింద 50cm దూరంలో చిన్నపేగుకే నేరుగా కన్నం పెట్టి కడుపు బయటకు స్టోమా బ్యాగ్ అమర్చారు (Loop Jejunostomy)[cite: 3].',
-      content_en: 'Due to severe conditions, a re-exploration surgery was performed on May 28[cite: 3]. The rectus sheath was infected, and cheesy pus was contained in the left subdiaphragmatic region[cite: 3]. Leaking segments were resected again, and end-to-end anastomoses were performed at two sites[cite: 3]. A Loop Jejunostomy was created 50cm from the DJ flexure[cite: 3].'
+      content_te: 'పరిస్థితి విషమించడంతో 28 మే న మళ్ళీ పొట్ట కోశారు (Re-exploration). అప్పటికే కడుపు కండరాలు (Rectus sheath) ఇన్ఫెక్షన్ కి గురై డ్యామేజ్ అయ్యాయి, ఎడమవైపు డయాఫ్రమ్ కింద చీము (Cheesy pus) పేరుకుపోయింది. ముందు వేసిన కుట్లు రెండు చోట్లా విడిపోవడంతో, ఆ భాగాలను మళ్ళీ కత్తిరించి రెండు చోట్ల కొత్తగా కుట్లు వేశారు. పేగులకు విశ్రాంతి ఇవ్వడానికి జీర్ణాశయం కింద 50cm దూరంలో చిన్నపేగుకే నేరుగా కన్నం పెట్టి కడుపు బయటకు స్టోమా బ్యాగ్ అమర్చారు (Loop Jejunostomy).',
+      content_en: 'Due to severe conditions, a re-exploration surgery was performed on May 28. The rectus sheath was infected, and cheesy pus was contained in the left subdiaphragmatic region. Leaking segments were resected again, and end-to-end anastomoses were performed at two sites. A Loop Jejunostomy was created 50cm from the DJ flexure.'
     },
     {
       id: 5,
@@ -64,8 +64,8 @@ export default function MedicalHistory() {
       hospital_te: 'RVM హాస్పిటల్ ఐసీయూ',
       hospital_en: 'RVM Hospital ICU',
       icon: <Syringe className="w-5 h-5 text-purple-600" />,
-      content_te: 'ఐసీయూలో ఉన్నప్పుడు సెంట్రల్ వీన్ ద్వారా ప్రాణాంతకమైన ఫంగస్ (Candida - Non albicans) పేషెంట్ రక్తం, మూత్రంలోకి చేరింది[cite: 3]. దీనికోసం ఖరీదైన అనిడులాఫంగిన్ (Anidulafungin) ఇంజెక్షన్లు వాడారు[cite: 3]. స్టోమా బ్యాగ్ ద్వారా రోజుకు 1500-1700ml ద్రవం బయటకు వచ్చేయడంతో పేషెంట్ పూర్తిగా ఎండిపోయి, నడవలేక వంగిపోయే పరిస్థితికి (bending forward while walking) చేరుకున్నాడు[cite: 3]. ప్రాణాలు నిలపడానికి, ఆ బయటకు వచ్చిన ద్రవాన్నే ఫిల్టర్ చేసి మళ్ళీ కింది పేగుల్లోకి గంటకు 50ml చొప్పున నేరుగా ఎక్కించారు (Refeeding through distal loop)[cite: 3].',
-      content_en: 'During ICU stay, a deadly Candida (Non-albicans) fungal infection entered the blood and urine[cite: 3]. It was treated with Anidulafungin injections[cite: 3]. Daily stoma output reached 1500-1700ml, causing severe dehydration and leaving the patient bending forward while walking[cite: 3]. For survival, proximal stoma contents were collected, filtered, and refed into the distal loop at 50ml/hour[cite: 3].'
+      content_te: 'ఐసీయూలో ఉన్నప్పుడు సెంట్రల్ వీన్ ద్వారా ప్రాణాంతకమైన ఫంగస్ (Candida - Non albicans) పేషెంట్ రక్తం, మూత్రంలోకి చేరింది. దీనికోసం ఖరీదైన అనిడులాఫంగిన్ (Anidulafungin) ఇంజెక్షన్లు వాడారు. స్టోమా బ్యాగ్ ద్వారా రోజుకు 1500-1700ml ద్రవం బయటకు వచ్చేయడంతో పేషెంట్ పూర్తిగా ఎండిపోయి, నడవలేక వంగిపోయే పరిస్థితికి (bending forward while walking) చేరుకున్నాడు. ప్రాణాలు నిలపడానికి, ఆ బయటకు వచ్చిన ద్రవాన్నే ఫిల్టర్ చేసి మళ్ళీ కింది పేగుల్లోకి గంటకు 50ml చొప్పున నేరుగా ఎక్కించారు (Refeeding through distal loop).',
+      content_en: 'During ICU stay, a deadly Candida (Non-albicans) fungal infection entered the blood and urine. It was treated with Anidulafungin injections. Daily stoma output reached 1500-1700ml, causing severe dehydration and leaving the patient bending forward while walking. For survival, proximal stoma contents were collected, filtered, and refed into the distal loop at 50ml/hour.'
     },
     {
       id: 6,
@@ -75,8 +75,8 @@ export default function MedicalHistory() {
       hospital_te: 'రోహిణి హాస్పిటల్ (Rohini Hospital)',
       hospital_en: 'Rohini Hospital',
       icon: <Activity className="w-5 h-5 text-rose-500" />,
-      content_te: 'జూన్ 23న తీవ్రమైన నీరసంతో రోహిణి హాస్పిటల్ లో చేరేసరికి హిమోగ్లోబిన్ 7.2 gm% కి, రక్తంలో సోడియం 130 mmol/L (Hyponatremia) కి పడిపోయి ప్రాణాపాయ స్థితికి చేరుకున్నాడు[cite: 4]. ఎమర్జెన్సీగా జూన్ 23న ఒక యూనిట్ PRBC రక్తం, జూన్ 24న ఒక యూనిట్ Whole Blood ఎక్కించి ప్రాణాలు నిలబెట్టారు[cite: 4]. టీపీఎన్ లైన్ (TPN) లో ఫంగస్ ఉండటం వల్ల వచ్చిన జ్వరానికి యాంటీ-ఫంగల్ మందులు వాడి డిశ్చార్జ్ చేశారు[cite: 4].',
-      content_en: 'Admitted to Rohini Hospital on June 23 with severe weakness, Hemoglobin dropped to 7.2 gm% and Sodium fell to 130 mmol/L (Hyponatremia)[cite: 4]. To save his life, PRBC and Whole Blood were transfused on June 23 and 24 respectively[cite: 4]. A Candida infection in the TPN line was treated with anti-fungals before discharge[cite: 4].'
+      content_te: 'జూన్ 23న తీవ్రమైన నీరసంతో రోహిణి హాస్పిటల్ లో చేరేసరికి హిమోగ్లోబిన్ 7.2 gm% కి, రక్తంలో సోడియం 130 mmol/L (Hyponatremia) కి పడిపోయి ప్రాణాపాయ స్థితికి చేరుకున్నాడు. ఎమర్జెన్సీగా జూన్ 23న ఒక యూనిట్ PRBC రక్తం, జూన్ 24న ఒక యూనిట్ Whole Blood ఎక్కించి ప్రాణాలు నిలబెట్టారు. టీపీఎన్ లైన్ (TPN) లో ఫంగస్ ఉండటం వల్ల వచ్చిన జ్వరానికి యాంటీ-ఫంగల్ మందులు వాడి డిశ్చార్జ్ చేశారు.',
+      content_en: 'Admitted to Rohini Hospital on June 23 with severe weakness, Hemoglobin dropped to 7.2 gm% and Sodium fell to 130 mmol/L (Hyponatremia). To save his life, PRBC and Whole Blood were transfused on June 23 and 24 respectively. A Candida infection in the TPN line was treated with anti-fungals before discharge.'
     }
   ];
 
