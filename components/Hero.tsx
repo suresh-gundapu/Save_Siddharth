@@ -10,7 +10,8 @@ export default function Hero() {
     "/images/after4.jpg",
     "/images/after5.jpg",
     "/images/after6.jpg",
-    "/images/after7.jpg"
+    "/images/after7.jpg",
+    "/images/after8.jpg"
 
   ];
   
