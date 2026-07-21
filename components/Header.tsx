@@ -25,7 +25,10 @@ export default function Header() {
             Medical History
           </Link>
           
-          
+          {/* ఈ కొత్త లింక్ యాడ్ చెయ్ */}
+        <Link href="/donors" className="text-indigo-600 hover:text-indigo-800 font-extrabold border-b-2 border-indigo-600 pb-1">
+          Donors & Funds ❤️
+        </Link>
           
           <a 
             href="/#donate" 
