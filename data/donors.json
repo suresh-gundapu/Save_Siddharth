@@ -1,7 +1,14 @@
 
+{
+"stats": {
+    "totalReceived": 86800,
+    "totalSpent": 16163
+  },
 
 
-[
+"donorsList":[
+
+  
   { "id": 1, "name": "******3914", "amount": 2000, "date": "20 Jul 2026" },
   { "id": 2, "name": "******9008", "amount": 1000, "date": "20 Jul 2026" },
   { "id": 3, "name": "THIRUPATHAIAH GOALLA", "amount": 1000, "date": "20 Jul 2026" },
@@ -68,3 +75,6 @@
   { "id": 64, "name": "Sharath (Collected from Friends)", "amount": 45800, "date": "17 Jul 2026" }
 
 ]
+
+
+}
