@@ -72,7 +72,21 @@
   { "id": 61, "name": "******6859", "amount": 100, "date": "17 Jul 2026" },
   { "id": 62, "name": "ajith", "amount": 20, "date": "17 Jul 2026" },
   { "id": 63, "name": "Nari Mama", "amount": 1, "date": "16 Jul 2026" },
-  { "id": 64, "name": "Sharath (Collected from Friends)", "amount": 45800, "date": "17 Jul 2026" }
+  { "id": 64, "name": "Sharath (Collected from Friends)", "amount": 45800, "date": "17 Jul 2026" },
+    { 
+      "id": 65, 
+      "name": "Palle Rajesh (KNR)", 
+      "amount": 5000, 
+      "date": "23 Jul 2026" 
+    },
+
+    { 
+      "id": 66, 
+      "name": "Madhav Sunchu", 
+      "amount": 5000, 
+      "date": "23 Jul 2026" 
+    }
+
 
 ]
 
