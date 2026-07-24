@@ -5,7 +5,6 @@ import { Hospital, Activity, HeartCrack, AlertCircle, Syringe, FileWarning } fro
 export default function MedicalHistory() {
   const [lang, setLang] = useState<'te' | 'en'>('te');
 
-  // ఈ కరెక్ట్ ఫార్ములా వల్ల యాప్ క్రాష్ అవ్వదు, బ్రాకెట్స్ కూడా మాయం అవుతాయి!
   const cleanText = (text: string) => {
     if (!text) return '';
     return text.replace(/\]+\]/g, '');
@@ -77,6 +76,17 @@ export default function MedicalHistory() {
       icon: <Activity className="w-5 h-5 text-rose-500" />,
       content_te: 'జూన్ 23న తీవ్రమైన నీరసంతో రోహిణి హాస్పిటల్ లో చేరేసరికి హిమోగ్లోబిన్ 7.2 gm% కి, రక్తంలో సోడియం 130 mmol/L (Hyponatremia) కి పడిపోయి ప్రాణాపాయ స్థితికి చేరుకున్నాడు. ఎమర్జెన్సీగా జూన్ 23న ఒక యూనిట్ PRBC రక్తం, జూన్ 24న ఒక యూనిట్ Whole Blood ఎక్కించి ప్రాణాలు నిలబెట్టారు. టీపీఎన్ లైన్ (TPN) లో ఫంగస్ ఉండటం వల్ల వచ్చిన జ్వరానికి యాంటీ-ఫంగల్ మందులు వాడి డిశ్చార్జ్ చేశారు.',
       content_en: 'Admitted to Rohini Hospital on June 23 with severe weakness, Hemoglobin dropped to 7.2 gm% and Sodium fell to 130 mmol/L (Hyponatremia). To save his life, PRBC and Whole Blood were transfused on June 23 and 24 respectively. A Candida infection in the TPN line was treated with anti-fungals before discharge.'
+    },
+    {
+      id: 7,
+      date: 'July 20, 2026 (Present)',
+      title_te: 'నిమ్స్ ట్రీట్మెంట్ & ఎస్టిమేషన్ (NIMS Treatment)',
+      title_en: 'NIMS Admission & Estimation',
+      hospital_te: 'నిమ్స్ హాస్పిటల్ (NIMS, Hyderabad)',
+      hospital_en: 'NIMS Hospital, Hyderabad',
+      icon: <Hospital className="w-5 h-5 text-teal-600" />,
+      content_te: 'పరిస్థితి విషమించి బరువు కేవలం 30 కేజీలకు పడిపోవడంతో నిమ్స్ హాస్పిటల్ లో చేర్పించారు. మునుపటి సర్జరీల వల్ల శరీరం సహకరించకపోవడంతో వెంటనే మరో సర్జరీ చేయడం ప్రమాదకరం అని డాక్టర్లు నిర్ధారించారు. ప్రాణాలు నిలబెట్టడానికి నరాల ద్వారా ఖరీదైన న్యూట్రిషన్ (TPN) ఎక్కిస్తున్నారు. ప్రస్తుతానికి మందులతోటే (Conservative management) ట్రీట్మెంట్ చేస్తున్నారు. రాబోయే హాస్పిటల్, TPN మరియు ఇతర ఖర్చుల కోసం ₹4,00,000 అవుతుందని నిమ్స్ వారు అధికారిక ఎస్టిమేషన్ లెటర్ ఇచ్చారు.',
+      content_en: 'Admitted to NIMS Hospital in critical condition as his weight dropped to just 30kg. Due to complications from previous surgeries, immediate surgery was deemed highly risky. He is currently being stabilized with Total Parenteral Nutrition (TPN) via IV. Doctors advised conservative management for now and issued an official estimation certificate stating ₹4,00,000 is required for continued treatment, TPN, and hospital charges.'
     }
   ];
 

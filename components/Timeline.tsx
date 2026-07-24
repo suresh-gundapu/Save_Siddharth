@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertCircle, Activity, HeartCrack, Syringe, Thermometer, ShieldAlert, HeartHandshake } from 'lucide-react';
+import { AlertCircle, Activity, HeartCrack, Syringe, Thermometer, ShieldAlert, HeartHandshake, Hospital } from 'lucide-react';
 
 export default function Timeline() {
   const events = [
@@ -46,10 +46,10 @@ export default function Timeline() {
       icon: <Activity className="w-5 h-5 text-rose-500" />
     },
     {
-      date: "భవిష్యత్తు అవసరం",
-      title: "మూడో ఆపరేషన్ గండం (Stoma Reversal)",
-      description: "డిశ్చార్జ్ సమయంలో వాడు తీవ్రమైన పరిస్థితిలో ఉన్నాడు (Prognosis: GUARDED). డాక్టర్లు సూచించిన ఖరీదైన న్యూట్రిషన్ (Peptamen) వాడాలి. కొన్ని వారాల్లో బయట ఉన్న పేగులను లోపల పెట్టడానికి మూడో పెద్ద సర్జరీ జరగాలి, దీనికి మీ సహాయం కావాలి.",
-      icon: <HeartHandshake className="w-5 h-5 text-blue-600" />
+      date: "జూలై 20, 2026 (ప్రస్తుతం)",
+      title: "నిమ్స్ ట్రీట్మెంట్ & ఎస్టిమేషన్ (NIMS Admission)",
+      description: "పరిస్థితి విషమించి బరువు 30 కేజీలకు పడిపోవడంతో నిమ్స్ హాస్పిటల్ లో చేర్పించాము. వెంటనే సర్జరీ చేయడం ప్రమాదకరమని, నరాల ద్వారా ఖరీదైన న్యూట్రిషన్ (TPN) ఎక్కిస్తూ మందులతో నయం చేస్తున్నారు. రాబోయే ట్రీట్మెంట్ కు ₹4,00,000 ఖర్చు అవుతుందని హాస్పిటల్ వారు ఎస్టిమేషన్ ఇచ్చారు.",
+      icon: <Hospital className="w-5 h-5 text-teal-600" />
     }
   ];
 
