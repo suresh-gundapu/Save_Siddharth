@@ -1,8 +1,9 @@
 {
-  "stats": {
-    "totalReceived": 95800,
-    "totalSpent": 24454
+    "stats": {
+    "totalReceived": 98800,
+    "totalSpent": 27684
   },
+
 
 "donorsList":[
 
@@ -83,6 +84,13 @@
       "name": "Madhav Sunchu", 
       "amount": 5000, 
       "date": "23 Jul 2026" 
+    },
+
+    { 
+      "id": 67, 
+      "name": "Burra Ravinder", 
+      "amount": 2000, 
+      "date": "24 Jul 2026" 
     }
 
 
