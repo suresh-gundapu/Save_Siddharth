@@ -4,7 +4,7 @@
     "totalSpent": 36027
   },
   "donorsList": [
-    { "id": 1, "name": "Sharath Gouda & Friends", "amount": 45800, "date": "26 Jul 2026" },
+    { "id": 1, "name": "Sharath Gundapu & Friends", "amount": 45800, "date": "26 Jul 2026" },
     { "id": 2, "name": "Palle Rajesh (KNR)", "amount": 5000, "date": "23 Jul 2026" },
     { "id": 3, "name": "Burra Ravinder (via Bro)", "amount": 2000, "date": "24 Jul 2026" },
     { "id": 4, "name": "SRI SRINIVASA AUTOMOBILES", "amount": 100, "date": "24 Jul 2026" },
