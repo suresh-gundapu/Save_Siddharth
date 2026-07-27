@@ -1,8 +1,9 @@
 {
-  "stats": {
+    "stats": {
     "totalReceived": 98800,
-    "totalSpent": 36027
+    "totalSpent": 37327
   },
+
   "donorsList": [
     { "id": 1, "name": "Sharath Gundapu & Friends", "amount": 45800, "date": "26 Jul 2026" },
     { "id": 2, "name": "Palle Rajesh (KNR)", "amount": 5000, "date": "23 Jul 2026" },
