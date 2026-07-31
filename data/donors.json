@@ -1,21 +1,25 @@
 {
     "stats": {
-    "totalReceived": 98800,
-    "totalSpent": 37327
+    "totalReceived": 111800,
+    "totalSpent": 72757
   },
   "expensesList": [
-    { "id": 1, "date": "20 Jul 2026", "description": "Medical Bill 1 (NIMS)", "amount": 3735 },
-    { "id": 2, "date": "20 Jul 2026", "description": "Medical Bill 2 (NIMS)", "amount": 3874 },
-    { "id": 3, "date": "20 Jul 2026", "description": "Other Hospital Expenses", "amount": 200 },
-    { "id": 4, "date": "20 Jul 2026", "description": "Travel (Car) & Utilities (Amazon Juicer)", "amount": 4354 },
-    { "id": 5, "date": "21 Jul 2026", "description": "TPN, Injections & Stoma Bag", "amount": 4000 },
-    { "id": 6, "date": "22 Jul 2026", "description": "TPN & Medicines", "amount": 5621 },
-    { "id": 7, "date": "23 Jul 2026", "description": "TPN Fluid", "amount": 2670 },
-    { "id": 8, "date": "24 Jul 2026", "description": "TPN & Other Needs", "amount": 3230 },
-    { "id": 9, "date": "25 Jul 2026", "description": "TPN (2 Days) & Urine Box/Can", "amount": 5760 },
-    { "id": 10, "date": "26 Jul 2026", "description": "Stoma Bags & Paste", "amount": 2583 },
-    { "id": 11, "date": "27 Jul 2026", "description": "Stoma Bag & Paste", "amount": 1300 }
-  ],
+  { "id": 1, "date": "20 Jul 2026", "description": "Medical Bill 1 (NIMS)", "amount": 3735 },
+  { "id": 2, "date": "20 Jul 2026", "description": "Medical Bill 2 (NIMS)", "amount": 3874 },
+  { "id": 3, "date": "20 Jul 2026", "description": "Other Hospital Expenses", "amount": 200 },
+  { "id": 4, "date": "20 Jul 2026", "description": "Travel (Car) & Utilities (Amazon Juicer)", "amount": 4354 },
+  { "id": 5, "date": "21 Jul 2026", "description": "TPN, Injections & Stoma Bag", "amount": 4000 },
+  { "id": 6, "date": "22 Jul 2026", "description": "TPN & Medicines", "amount": 5621 },
+  { "id": 7, "date": "23 Jul 2026", "description": "TPN Fluid", "amount": 2670 },
+  { "id": 8, "date": "24 Jul 2026", "description": "TPN & Other Needs", "amount": 3230 },
+  { "id": 9, "date": "25 Jul 2026", "description": "TPN (2 Days) & Urine Box/Can", "amount": 5760 },
+  { "id": 10, "date": "26 Jul 2026", "description": "Stoma Bags & Paste", "amount": 2583 },
+  { "id": 11, "date": "27 Jul 2026", "description": "Stoma Bag & Paste", "amount": 1300 },
+  { "id": 12, "date": "30 Jul 2026", "description": "Peptamen Powder & Stoma Bags", "amount": 2000 },
+  { "id": 13, "date": "30 Jul 2026", "description": "Peptamen & Stoma Bag Balance Payment", "amount": 980 },
+  { "id": 14, "date": "30 Jul 2026", "description": "Food Expenses", "amount": 200 },
+  { "id": 15, "date": "31 Jul 2026", "description": "NIMS Hospital Discharge & Medical Expenses", "amount": 32250 }
+],
 
   "donorsList": [
     { "id": 1, "name": "Sharath Gundapu & Friends", "amount": 45800, "date": "26 Jul 2026" },

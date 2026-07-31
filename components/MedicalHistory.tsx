@@ -11,85 +11,131 @@ export default function MedicalHistory() {
   };
 
   const historyData = [
-    {
-      id: 1,
-      date: '14 - 15 May 2026',
-      title_te: 'వ్యాధి నిర్ధారణ (Diagnosis)',
-      title_en: 'Initial Diagnosis',
-      hospital_te: 'ఉమాదేవి & గార్డియన్ హాస్పిటల్స్',
-      hospital_en: 'Umadevi & Guardian Hospitals',
-      icon: <AlertCircle className="w-5 h-5 text-orange-500" />,
-      content_te: 'మే 14న తీవ్రమైన కడుపు నొప్పి, వాంతులతో ఉమాదేవి హాస్పిటల్ లో చేరారు. అల్ట్రాసౌండ్ లో పేగులు అతుక్కుపోయి మలం నిలిచిపోయిందని (Subacute Intestinal Obstruction) తేలింది. వెంటనే గార్డియన్ హాస్పిటల్ లో CT స్కాన్ చేయగా, నాభి దగ్గర కుడివైపు (Right Spigelian hernia) పేగులు 3.5cm వరకు ఉబ్బి ఇరుక్కుపోయాయని నిర్ధారణ అయింది.',
-      content_en: 'Admitted to Umadevi Hospital on May 14 with severe abdominal pain and vomiting. Ultrasound showed mildly dilated and fecal loaded small bowel loops. CT scan at Guardian Hospital confirmed a Right Spigelian hernia with small bowel loops herniating and proximal dilation up to 3.5cm.'
-    },
-    {
-      id: 2,
-      date: '15 May 2026',
-      title_te: 'మొదటి ఆపరేషన్ (First Surgery)',
-      title_en: 'Exploratory Laparotomy',
-      hospital_te: 'RVM హాస్పిటల్ (RVM Hospital)',
-      hospital_en: 'RVM Hospital',
-      icon: <Activity className="w-5 h-5 text-blue-500" />,
-      content_te: 'మే 15న RVM హాస్పిటల్ లో ఎమర్జెన్సీగా పొట్ట కోసి మొదటి ఆపరేషన్ (Exploratory Laparotomy) చేశారు. లోపల పేగులు విపరీతంగా ఉబ్బిపోయి, డాక్టర్లు కనీసం చేతులు కూడా పెట్టలేనంత దారుణంగా ఒకదానికొకటి అతుక్కుపోయి (Dense interloop adhesions) ఉన్నాయి. రక్తప్రసరణ ఆగిపోయి పూర్తిగా కుళ్ళిపోయిన (Gangrenous) రెండు చిన్నపేగు భాగాలను కత్తిరించి తీసేసి, మిగిలిన వాటిని కలిపి కుట్లు వేశారు.',
-      content_en: 'Emergency Exploratory Laparotomy was performed at RVM Hospital on May 15. Surgeons found grossly distended gangrenous small bowel loops with dense interloop adhesions. Two completely gangrenous small bowel loops were resected and an end-to-end anastomosis was performed.'
-    },
-    {
-      id: 3,
-      date: '20 - 27 May 2026',
-      title_te: 'కుట్లు విడిపోవడం (Suture Leakage)',
-      title_en: 'Suture Leakage & Complications',
-      hospital_te: 'RVM హాస్పిటల్ ఐసీయూ',
-      hospital_en: 'RVM Hospital ICU',
-      icon: <FileWarning className="w-5 h-5 text-yellow-500" />,
-      content_te: 'ఆపరేషన్ జరిగిన 5వ రోజున, లోపల కుట్లు వేసిన కింది భాగం నుండి రక్తంతో కూడిన లీకేజ్ (Hematobilious leak, clots) మొదలైంది. దీనివల్ల రక్తంలో హిమోగ్లోబిన్ దారుణంగా పడిపోయింది. ఈ లీకేజ్ రోజుకు 900ml నుండి 1500ml వరకు బయటకు రావడం గమనించి, ఆ ద్రవాన్ని అంచనా వేయడానికి తాత్కాలికంగా ఒక బ్యాగ్ అమర్చారు.',
-      content_en: 'On post-operative day 5, a hematobilious leak with clots emerged from the lower suture site. Hemoglobin levels dropped significantly due to this. A temporary stoma bag was placed to quantify the leak, which was around 900ml to 1500ml daily.'
-    },
-    {
-      id: 4,
-      date: '28 May 2026',
-      title_te: 'రెండో ఆపరేషన్ (Second Surgery)',
-      title_en: 'Re-exploration & Stoma',
-      hospital_te: 'RVM హాస్పిటల్',
-      hospital_en: 'RVM Hospital',
-      icon: <HeartCrack className="w-5 h-5 text-red-600" />,
-      content_te: 'పరిస్థితి విషమించడంతో 28 మే న మళ్ళీ పొట్ట కోశారు (Re-exploration). అప్పటికే కడుపు కండరాలు (Rectus sheath) ఇన్ఫెక్షన్ కి గురై డ్యామేజ్ అయ్యాయి, ఎడమవైపు డయాఫ్రమ్ కింద చీము (Cheesy pus) పేరుకుపోయింది. ముందు వేసిన కుట్లు రెండు చోట్లా విడిపోవడంతో, ఆ భాగాలను మళ్ళీ కత్తిరించి రెండు చోట్ల కొత్తగా కుట్లు వేశారు. పేగులకు విశ్రాంతి ఇవ్వడానికి జీర్ణాశయం కింద 50cm దూరంలో చిన్నపేగుకే నేరుగా కన్నం పెట్టి కడుపు బయటకు స్టోమా బ్యాగ్ అమర్చారు (Loop Jejunostomy).',
-      content_en: 'Due to severe conditions, a re-exploration surgery was performed on May 28. The rectus sheath was infected, and cheesy pus was contained in the left subdiaphragmatic region. Leaking segments were resected again, and end-to-end anastomoses were performed at two sites. A Loop Jejunostomy was created 50cm from the DJ flexure.'
-    },
-    {
-      id: 5,
-      date: 'June 2026',
-      title_te: 'ఫంగస్ & లూప్ ఫీడింగ్ (Fungal Sepsis)',
-      title_en: 'Fungal Sepsis & Refeeding',
-      hospital_te: 'RVM హాస్పిటల్ ఐసీయూ',
-      hospital_en: 'RVM Hospital ICU',
-      icon: <Syringe className="w-5 h-5 text-purple-600" />,
-      content_te: 'ఐసీయూలో ఉన్నప్పుడు సెంట్రల్ వీన్ ద్వారా ప్రాణాంతకమైన ఫంగస్ (Candida - Non albicans) పేషెంట్ రక్తం, మూత్రంలోకి చేరింది. దీనికోసం ఖరీదైన అనిడులాఫంగిన్ (Anidulafungin) ఇంజెక్షన్లు వాడారు. స్టోమా బ్యాగ్ ద్వారా రోజుకు 1500-1700ml ద్రవం బయటకు వచ్చేయడంతో పేషెంట్ పూర్తిగా ఎండిపోయి, నడవలేక వంగిపోయే పరిస్థితికి (bending forward while walking) చేరుకున్నాడు. ప్రాణాలు నిలపడానికి, ఆ బయటకు వచ్చిన ద్రవాన్నే ఫిల్టర్ చేసి మళ్ళీ కింది పేగుల్లోకి గంటకు 50ml చొప్పున నేరుగా ఎక్కించారు (Refeeding through distal loop).',
-      content_en: 'During ICU stay, a deadly Candida (Non-albicans) fungal infection entered the blood and urine. It was treated with Anidulafungin injections. Daily stoma output reached 1500-1700ml, causing severe dehydration and leaving the patient bending forward while walking. For survival, proximal stoma contents were collected, filtered, and refed into the distal loop at 50ml/hour.'
-    },
-    {
-      id: 6,
-      date: '23 - 25 June 2026',
-      title_te: 'రక్తమార్పిడి (Blood Transfusion)',
-      title_en: 'Emergency Blood Transfusion',
-      hospital_te: 'రోహిణి హాస్పిటల్ (Rohini Hospital)',
-      hospital_en: 'Rohini Hospital',
-      icon: <Activity className="w-5 h-5 text-rose-500" />,
-      content_te: 'జూన్ 23న తీవ్రమైన నీరసంతో రోహిణి హాస్పిటల్ లో చేరేసరికి హిమోగ్లోబిన్ 7.2 gm% కి, రక్తంలో సోడియం 130 mmol/L (Hyponatremia) కి పడిపోయి ప్రాణాపాయ స్థితికి చేరుకున్నాడు. ఎమర్జెన్సీగా జూన్ 23న ఒక యూనిట్ PRBC రక్తం, జూన్ 24న ఒక యూనిట్ Whole Blood ఎక్కించి ప్రాణాలు నిలబెట్టారు. టీపీఎన్ లైన్ (TPN) లో ఫంగస్ ఉండటం వల్ల వచ్చిన జ్వరానికి యాంటీ-ఫంగల్ మందులు వాడి డిశ్చార్జ్ చేశారు.',
-      content_en: 'Admitted to Rohini Hospital on June 23 with severe weakness, Hemoglobin dropped to 7.2 gm% and Sodium fell to 130 mmol/L (Hyponatremia). To save his life, PRBC and Whole Blood were transfused on June 23 and 24 respectively. A Candida infection in the TPN line was treated with anti-fungals before discharge.'
-    },
-    {
-      id: 7,
-      date: 'July 20, 2026 (Present)',
-      title_te: 'నిమ్స్ ట్రీట్మెంట్ & ఎస్టిమేషన్ (NIMS Treatment)',
-      title_en: 'NIMS Admission & Estimation',
-      hospital_te: 'నిమ్స్ హాస్పిటల్ (NIMS, Hyderabad)',
-      hospital_en: 'NIMS Hospital, Hyderabad',
-      icon: <Hospital className="w-5 h-5 text-teal-600" />,
-      content_te: 'పరిస్థితి విషమించి బరువు కేవలం 30 కేజీలకు పడిపోవడంతో నిమ్స్ హాస్పిటల్ లో చేర్పించారు. మునుపటి సర్జరీల వల్ల శరీరం సహకరించకపోవడంతో వెంటనే మరో సర్జరీ చేయడం ప్రమాదకరం అని డాక్టర్లు నిర్ధారించారు. ప్రాణాలు నిలబెట్టడానికి నరాల ద్వారా ఖరీదైన న్యూట్రిషన్ (TPN) ఎక్కిస్తున్నారు. ప్రస్తుతానికి మందులతోటే (Conservative management) ట్రీట్మెంట్ చేస్తున్నారు. రాబోయే హాస్పిటల్, TPN మరియు ఇతర ఖర్చుల కోసం ₹4,00,000 అవుతుందని నిమ్స్ వారు అధికారిక ఎస్టిమేషన్ లెటర్ ఇచ్చారు.',
-      content_en: 'Admitted to NIMS Hospital in critical condition as his weight dropped to just 30kg. Due to complications from previous surgeries, immediate surgery was deemed highly risky. He is currently being stabilized with Total Parenteral Nutrition (TPN) via IV. Doctors advised conservative management for now and issued an official estimation certificate stating ₹4,00,000 is required for continued treatment, TPN, and hospital charges.'
-    }
-  ];
+  {
+    id: 1,
+    date: "14 - 15 May 2026",
+    title_te: "వ్యాధి నిర్ధారణ (Diagnosis)",
+    title_en: "Initial Diagnosis",
+    hospital_te: "ఉమాదేవి & గార్డియన్ హాస్పిటల్స్",
+    hospital_en: "Umadevi & Guardian Hospitals",
+    icon: <AlertCircle className="w-5 h-5 text-orange-500" />,
+    content_te:
+      "2026 మే 14న తీవ్రమైన కడుపు నొప్పి, వాంతులు, Motion ఆగిపోవడంతో మొదట ఉమాదేవి హాస్పిటల్ లో చేర్పించారు. Ultrasound లో Dilated Small Bowel Loops మరియు Subacute Intestinal Obstruction అనుమానం వ్యక్తమైంది. అనంతరం Guardian Hospital లో CT Abdomen చేయగా Right Spigelian Hernia కారణంగా Small Bowel Obstruction ఏర్పడిందని, Proximal Small Bowel Loops సుమారు 3.5 సెం.మీ వరకు ఉబ్బిపోయాయని నిర్ధారించారు. పరిస్థితి అత్యవసరంగా ఉండటంతో వెంటనే Higher Surgical Centre కి Refer చేశారు.",
+    content_en:
+      "On 14 May 2026, Siddharth was admitted with severe abdominal pain, vomiting and inability to pass stool. Ultrasound suggested dilated small bowel loops with suspected subacute intestinal obstruction. A CT Abdomen at Guardian Hospital confirmed a Right Spigelian Hernia causing Small Bowel Obstruction with proximal bowel dilation of approximately 3.5 cm. He was immediately referred to a higher surgical center for emergency management."
+  },
 
+  {
+    id: 2,
+    date: "16 May 2026",
+    title_te: "మొదటి ఎమర్జెన్సీ ఆపరేషన్",
+    title_en: "Emergency Exploratory Laparotomy",
+    hospital_te: "RVM హాస్పిటల్",
+    hospital_en: "RVM Hospital",
+    icon: <Activity className="w-5 h-5 text-blue-500" />,
+    content_te:
+      "RVM Hospital లో అత్యవసర Exploratory Laparotomy నిర్వహించారు. శస్త్రచికిత్స సమయంలో చిన్నపేగులు తీవ్రంగా ఉబ్బిపోయి ఒకదానికొకటి అతుక్కుపోయినట్లు (Dense Interloop Adhesions) గుర్తించారు. రక్తప్రసరణ పూర్తిగా ఆగిపోవడంతో Gangrene అయిన రెండు చిన్నపేగు భాగాలను తొలగించి (Small Bowel Resection), ఆరోగ్యకరమైన భాగాలను మళ్లీ కలిపి Anastomosis చేశారు. ఈ శస్త్రచికిత్స ద్వారా ప్రాణాపాయ పరిస్థితిని తాత్కాలికంగా నియంత్రించారు.",
+    content_en:
+      "Emergency Exploratory Laparotomy was performed at RVM Hospital. Surgeons found grossly distended small bowel loops with dense interloop adhesions. Two gangrenous bowel segments were resected and primary end-to-end anastomosis was performed to restore intestinal continuity."
+  },
+
+  {
+    id: 3,
+    date: "20 - 27 May 2026",
+    title_te: "ఆపరేషన్ అనంతర తీవ్రమైన సమస్యలు",
+    title_en: "Post-operative Complications",
+    hospital_te: "RVM Hospital ICU",
+    hospital_en: "RVM Hospital ICU",
+    icon: <FileWarning className="w-5 h-5 text-yellow-500" />,
+    content_te:
+      "శస్త్రచికిత్స జరిగిన ఐదవ రోజు నుండి Anastomosis చేసిన ప్రాంతంలో Leak ప్రారంభమైంది. Hematobilious Leak, Blood Clots మరియు Enteric Fluid బయటకు రావడం ప్రారంభమైంది. Hemoglobin గణనీయంగా తగ్గిపోయింది. రోజుకు సుమారు 900 నుండి 1500 మి.లీ వరకు లీకేజ్ నమోదవడంతో పరిస్థితి మరింత విషమించింది. ఇది తరువాత Enterocutaneous Fistula మరియు Anastomotic Dehiscence గా అభివృద్ధి చెందింది.",
+    content_en:
+      "On the fifth postoperative day, leakage developed from the anastomosis site. Hematobilious fluid, blood clots and enteric contents were continuously draining. Hemoglobin dropped significantly, with daily output ranging from 900–1500 ml. The complication later progressed into Enterocutaneous Fistula and Anastomotic Dehiscence."
+  },
+
+  {
+    id: 4,
+    date: "28 May 2026",
+    title_te: "రెండో ప్రాణరక్షక ఆపరేషన్",
+    title_en: "Emergency Re-exploration & Loop Jejunostomy",
+    hospital_te: "RVM Hospital",
+    hospital_en: "RVM Hospital",
+    icon: <HeartCrack className="w-5 h-5 text-red-600" />,
+    content_te:
+      "పరిస్థితి మరింత విషమించడంతో మళ్లీ అత్యవసర Re-exploration నిర్వహించారు. Rectus Sheath ఇన్ఫెక్షన్ కు గురైంది. ఎడమ Subdiaphragmatic ప్రాంతంలో Cheesy Pus గుర్తించారు. గతంలో కలిపిన పేగుల రెండు ప్రాంతాల్లో కుట్లు విడిపోవడంతో మళ్లీ Resection చేసి కొత్త Anastomosis చేశారు. అనంతరం పేగులకు విశ్రాంతి ఇవ్వడానికి Duodenojejunal Flexure నుండి సుమారు 50 సెం.మీ దూరంలో Loop Jejunostomy (Stoma) ఏర్పాటు చేశారు.",
+    content_en:
+      "Due to worsening condition, emergency re-exploration was performed. Surgeons found infected rectus sheath and cheesy pus in the left subdiaphragmatic region. Failed anastomotic segments were resected and reconstructed. A Loop Jejunostomy was created approximately 50 cm distal to the DJ Flexure to divert bowel contents and allow healing."
+  },
+  {
+  id: 5,
+  date: "June 2026",
+  title_te: "ఫంగల్ సెప్సిస్ & డిస్టల్ రీఫీడింగ్",
+  title_en: "Fungal Sepsis & Distal Refeeding",
+  hospital_te: "RVM Hospital ICU",
+  hospital_en: "RVM Hospital ICU",
+  icon: <Syringe className="w-5 h-5 text-purple-600" />,
+  content_te:
+    "రెండో శస్త్రచికిత్స అనంతరం ఐసీయూలో చికిత్స పొందుతున్న సమయంలో రోగికి Candida (Non-albicans) Fungal Sepsis వచ్చింది. దీనికి Anidulafungin Anti-fungal చికిత్స అందించారు. అదే సమయంలో Loop Jejunostomy ద్వారా రోజుకు సుమారు 1500–1700 ml వరకు పేగు ద్రవం బయటకు రావడంతో శరీరంలో నీరు, లవణాలు మరియు పోషకాలు తీవ్రంగా తగ్గిపోయాయి. మిగిలిన పేగులు పనిచేస్తూ ఉండేందుకు బయటకు వచ్చిన ద్రవాన్ని శుభ్రపరిచి Distal Loop లోకి గంటకు సుమారు 50 ml చొప్పున Refeeding ప్రారంభించారు.",
+  content_en:
+    "Following the second surgery, the patient developed Candida (Non-albicans) fungal sepsis while in the ICU and was treated with Anidulafungin. Daily jejunostomy output reached approximately 1500–1700 ml, resulting in severe fluid, electrolyte and nutritional loss. To preserve distal bowel function, filtered proximal intestinal contents were continuously re-fed into the distal loop at approximately 50 ml/hour."
+},
+
+{
+  id: 6,
+  date: "23 - 25 June 2026",
+  title_te: "రోహిణి హాస్పిటల్ లో అత్యవసర చికిత్స",
+  title_en: "Emergency Treatment at Rohini Hospital",
+  hospital_te: "రోహిణి హాస్పిటల్",
+  hospital_en: "Rohini Hospital",
+  icon: <Activity className="w-5 h-5 text-rose-500" />,
+  content_te:
+    "తీవ్ర బలహీనత, రక్తహీనత మరియు Electrolyte అసమతుల్యతల కారణంగా రోహిణి హాస్పిటల్ లో చేర్పించారు. Hemoglobin సుమారు 7.2 gm/dL వరకు తగ్గడంతో PRBC మరియు Whole Blood ఎక్కించారు. IV Fluids, Electrolyte Correction మరియు Anti-fungal చికిత్స అనంతరం పరిస్థితి కొంత స్థిరపడటంతో డిశ్చార్జ్ చేశారు.",
+  content_en:
+    "The patient was admitted to Rohini Hospital with severe weakness, anemia and electrolyte imbalance. Hemoglobin dropped to approximately 7.2 g/dL requiring PRBC and Whole Blood transfusions. IV fluids, electrolyte correction and antifungal therapy stabilized his condition before discharge."
+},
+
+{
+  id: 7,
+  date: "20 - 29 July 2026",
+  title_te: "నిమ్స్ హాస్పిటల్ చికిత్స",
+  title_en: "Treatment at NIMS Hospital",
+  hospital_te: "NIMS Hospital, Hyderabad",
+  hospital_en: "NIMS Hospital, Hyderabad",
+  icon: <Hospital className="w-5 h-5 text-teal-600" />,
+  content_te:
+    "గత రెండు పెద్ద శస్త్రచికిత్సలు, Enterocutaneous Fistula, Anastomotic Dehiscence మరియు Loop Jejunostomy అనంతరం NIMS Surgical Gastroenterology విభాగంలో చేర్పించారు. CT Abdomen & Pelvis, రక్త పరీక్షలు మరియు పూర్తి క్లినికల్ మూల్యాంకనం నిర్వహించారు. Sodium (125 mmol/L) మరియు Potassium (2.2 mmol/L) తీవ్రంగా తగ్గినట్లు గుర్తించి వెంటనే సరిచేశారు. ప్రస్తుతం మరో శస్త్రచికిత్స చేయడం ప్రమాదకరమని భావించి Conservative Management, Nutritional Rehabilitation, High Protein Diet, Distal Refeeding, Electrolyte Correction మరియు Stoma Care ప్రారంభించారు.",
+  content_en:
+    "Following multiple abdominal surgeries complicated by Enterocutaneous Fistula, Anastomotic Dehiscence and Loop Jejunostomy, the patient was admitted to the Surgical Gastroenterology Department at NIMS. CT Abdomen & Pelvis, laboratory investigations and complete clinical evaluation were performed. Severe hyponatremia (125 mmol/L) and hypokalemia (2.2 mmol/L) were corrected. Due to high surgical risk, doctors opted for conservative management with nutritional rehabilitation, high-protein diet, distal refeeding, electrolyte correction and comprehensive stoma care."
+},
+
+{
+  id: 8,
+  date: "29 July 2026",
+  title_te: "నిమ్స్ నుండి డిశ్చార్జ్",
+  title_en: "Discharge from NIMS",
+  hospital_te: "NIMS Hospital",
+  hospital_en: "NIMS Hospital",
+  icon: <Hospital className="w-5 h-5 text-green-600" />,
+  content_te:
+    "దాదాపు పది రోజుల చికిత్స అనంతరం రోగి పరిస్థితి మెరుగుపడటంతో NIMS నుండి డిశ్చార్జ్ చేశారు. డిశ్చార్జ్ సమయానికి Electrolytes సాధారణ స్థాయికి చేరుకున్నాయి, Infection అదుపులో ఉంది మరియు Stoma సరిగా పనిచేస్తోంది. ఇంట్లో High Protein & High Calorie Diet, Distal Refeeding, Stoma Care, Loperamide, Zinc, Calcium, Multivitamins కొనసాగిస్తూ వారం రోజుల తర్వాత Surgical Gastroenterology OPD లో తిరిగి పరీక్ష చేయించుకోవాలని సూచించారు.",
+  content_en:
+    "After approximately ten days of treatment, the patient was discharged from NIMS in a clinically stable condition. Electrolytes had improved, infection was under control and the stoma was functioning well. Doctors advised continuation of a high-protein, high-calorie diet, distal refeeding, stoma care, Loperamide, Zinc, Calcium, Multivitamins and review at the Surgical Gastroenterology OPD after one week."
+},
+
+{
+  id: 9,
+  date: "Current Status",
+  title_te: "ప్రస్తుత పరిస్థితి & తదుపరి చికిత్స",
+  title_en: "Current Status & Future Treatment",
+  hospital_te: "NIMS Follow-up",
+  hospital_en: "NIMS Follow-up",
+  icon: <Hospital className="w-5 h-5 text-indigo-600" />,
+  content_te:
+    "ప్రస్తుతం ప్రాణాపాయ దశ నుండి బయటపడ్డారు. అయితే ఇంకా పూర్తి కోలుకోలేదు. Nutritional Rehabilitation కొనసాగుతోంది. బరువు, Albumin, Protein Levels, Electrolytes మెరుగుపడిన తరువాత మరియు పేగులు పూర్తిగా కోలుకున్నాయని వైద్యులు నిర్ధారించిన తర్వాత మాత్రమే Stoma Reversal Surgery గురించి నిర్ణయం తీసుకుంటారు. ప్రస్తుతం అన్ని చికిత్సలు ఆ లక్ష్యంతోనే కొనసాగుతున్నాయి.",
+  content_en:
+    "The patient has recovered from the life-threatening phase but continues to require nutritional rehabilitation. Doctors will consider Stoma Reversal Surgery only after nutritional status, albumin, electrolyte balance and overall bowel healing have significantly improved. Current treatment is focused on preparing him safely for that future stage."
+}
+];
   return (
     <section className="bg-white rounded-2xl shadow-lg p-6 md:p-10 border border-gray-100 mb-10">
       

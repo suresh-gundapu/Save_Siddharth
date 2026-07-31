@@ -3,55 +3,94 @@ import { AlertCircle, Activity, HeartCrack, Syringe, Thermometer, ShieldAlert, H
 
 export default function Timeline() {
   const events = [
-    {
-      date: "మే 14 - 15, 2026",
-      title: "వ్యాధి నిర్ధారణ (Diagnosis)",
-      description: "3 రోజుల పాటు తీవ్రమైన కడుపునొప్పి, వాంతులు. ఉమాదేవి మరియు గార్డియన్ హాస్పిటల్స్ లో సిటీ స్కాన్ చేయగా.. పేగులు అతుక్కుపోయి, గ్యాంగ్రీన్ దశకు చేరుకున్నాయని (Small Bowel Obstruction & Spigelian Hernia) నిర్ధారణ.",
-      icon: <AlertCircle className="w-5 h-5 text-orange-500" />
-    },
-    {
-      date: "మే 15, 2026",
-      title: "మొదటి ఆపరేషన్ (First Surgery)",
-      description: "RVM హాస్పిటల్ లో ఎమర్జెన్సీగా పొట్ట కోసి (Exploratory Laparotomy), కుళ్ళిపోయిన (Gangrenous) చిన్నపేగు భాగాలను కత్తిరించి, మిగిలిన పేగులను కలిపి కుట్లు వేశారు.",
-      icon: <Activity className="w-5 h-5 text-blue-500" />
-    },
-    {
-      date: "మే 20 - 27, 2026",
-      title: "కుట్లు విడిపోవడం (Post-op Leakage)",
-      description: "సర్జరీ జరిగిన 5వ రోజున లోపల కుట్లు విడిపోయి, రక్తం మరియు క్లాట్స్ లీక్ అవ్వడం (Hematobilious leak) మొదలైంది. హీమోగ్లోబిన్ దారుణంగా పడిపోవడంతో లీకేజ్ ని అంచనా వేయడానికి తాత్కాలికంగా ఒక బ్యాగ్ అమర్చారు.",
-      icon: <ShieldAlert className="w-5 h-5 text-red-400" />
-    },
-    {
-      date: "మే 28, 2026",
-      title: "రెండో ఆపరేషన్ (The Stoma Bag)",
-      description: "కడుపులో చీము (Cheesy pus) చేరడంతో మళ్ళీ పొట్ట కోసి రెండో ఆపరేషన్ చేశారు (Re-exploration). కుట్లు ఊడిపోయిన పేగులను కత్తిరించి, ప్రాణం కాపాడటానికి జీర్ణాశయం కింద ఉన్న చిన్నపేగుకే నేరుగా కన్నం పెట్టి బ్యాగ్ అమర్చారు (Loop Jejunostomy).",
-      icon: <HeartCrack className="w-5 h-5 text-red-600" />
-    },
-    {
-      date: "జూన్, 2026",
-      title: "రక్తాన్ని కమ్మేసిన ఫంగస్ (Candidemia)",
-      description: "ఐసీయూలో రోజుల తరబడి ఉండటం వల్ల వాడి రక్తం, మూత్రం, మరియు గుండెకు వెళ్ళే నరాల్లోకి ప్రాణాంతకమైన 'కాండిడా ఫంగస్' ప్రవేశించింది (Candidemia Sepsis). దీని కోసం ఖరీదైన 'అనిడులాఫంగిన్' ఇంజెక్షన్లు వాడాల్సి వచ్చింది.",
-      icon: <Thermometer className="w-5 h-5 text-purple-600" />
-    },
-    {
-      date: "ప్రతి రోజూ..",
-      title: "నరకప్రాయమైన ఫీడింగ్ (Loop Refeeding)",
-      description: "వాడు ఏది తిన్నా, తాగినా అది జీర్ణం కాకముందే ద్రవంలా ఆ స్టోమా కన్నం ద్వారా బయటకు వచ్చేస్తోంది (రోజుకు 1700ml). వాడు బతకాలంటే, ఆ బ్యాగ్ లో పడిన ద్రవాన్ని ఫిల్టర్ చేసి, కింది పేగుల్లోకి గంటకు 50ml చొప్పున వాడికి వాడే ఎక్కించుకోవాలి.",
-      icon: <Syringe className="w-5 h-5 text-green-500" />
-    },
-    {
-      date: "జూన్ 23 - 25, 2026",
-      title: "రోహిణి హాస్పిటల్ (Blood Transfusion)",
-      description: "ఈ పోరాటంలో వాడి రక్తం 7.2 gm% కి, ఉప్పు శాతం 133 కి దారుణంగా పడిపోయింది. రోహిణి హాస్పిటల్ లో చేర్చి, రెండు యూనిట్ల రక్తం ఎక్కించి ఎమర్జెన్సీగా ప్రాణాలు నిలబెట్టారు.",
-      icon: <Activity className="w-5 h-5 text-rose-500" />
-    },
-    {
-      date: "జూలై 20, 2026 (ప్రస్తుతం)",
-      title: "నిమ్స్ ట్రీట్మెంట్ & ఎస్టిమేషన్ (NIMS Admission)",
-      description: "పరిస్థితి విషమించి బరువు 30 కేజీలకు పడిపోవడంతో నిమ్స్ హాస్పిటల్ లో చేర్పించాము. వెంటనే సర్జరీ చేయడం ప్రమాదకరమని, నరాల ద్వారా ఖరీదైన న్యూట్రిషన్ (TPN) ఎక్కిస్తూ మందులతో నయం చేస్తున్నారు. రాబోయే ట్రీట్మెంట్ కు ₹4,00,000 ఖర్చు అవుతుందని హాస్పిటల్ వారు ఎస్టిమేషన్ ఇచ్చారు.",
-      icon: <Hospital className="w-5 h-5 text-teal-600" />
-    }
-  ];
+  {
+    date: "పుట్టినప్పుడు",
+    title: "జన్మతోనే మొదలైన పోరాటం",
+    description:
+      "పుట్టిన 24 గంటల్లో మలం రాకపోవడంతో కేవలం 5 రోజుల వయసులోనే అత్యవసరంగా Ileostomy చేశారు. 10 నెలల తర్వాత Stoma Reversal చేశారు. అప్పటి నుండి పేగుల్లో Adhesions (అతుక్కుపోవడం) వచ్చే ప్రమాదం ఎక్కువగా ఉంది.",
+    icon: <HeartHandshake className="w-5 h-5 text-pink-600" />
+  },
+
+  {
+    date: "మే 14 - 15, 2026",
+    title: "తీవ్ర కడుపు నొప్పి",
+    description:
+      "3 రోజులుగా తీవ్రమైన కడుపునొప్పి, వాంతులు, Motion పూర్తిగా ఆగిపోవడంతో Uma Devi మరియు Guardian Hospital కి తరలించారు. CT Scan లో Spigelian Hernia వల్ల Small Bowel Obstruction గుర్తించారు.",
+    icon: <AlertCircle className="w-5 h-5 text-orange-500" />
+  },
+
+  {
+    date: "మే 16, 2026",
+    title: "మొదటి ఎమర్జెన్సీ ఆపరేషన్",
+    description:
+      "పేగులకు రక్తప్రసరణ ఆగిపోవడంతో చిన్నపేగులో రెండు భాగాలు Gangrene అయ్యాయి. RVM Hospital లో Emergency Exploratory Laparotomy చేసి, Gangrenous Bowel తొలగించి మిగిలిన పేగులను కలిపారు (Anastomosis).",
+    icon: <Activity className="w-5 h-5 text-blue-500" />
+  },
+
+  {
+    date: "మే 21 - 27, 2026",
+    title: "ఆపరేషన్ తర్వాత తీవ్రమైన సమస్యలు",
+    description:
+      "5వ రోజున పేగులు కలిపిన చోట కుట్లు విడిపోయాయి (Anastomotic Dehiscence). Bile Leak, Enterocutaneous Fistula, Internal Bleeding రావడంతో Hemoglobin బాగా పడిపోయింది.",
+    icon: <ShieldAlert className="w-5 h-5 text-red-500" />
+  },
+
+  {
+    date: "మే 28, 2026",
+    title: "రెండో ప్రాణరక్షక ఆపరేషన్",
+    description:
+      "మళ్లీ పొట్ట కోసి దెబ్బతిన్న పేగులను తొలగించి Loop Jejunostomy (Stoma) ఏర్పాటు చేశారు. అప్పటి నుండి Siddharth జీవితం పూర్తిగా Stoma Bag మీదే ఆధారపడింది.",
+    icon: <HeartCrack className="w-5 h-5 text-red-700" />
+  },
+
+  {
+    date: "జూన్, 2026",
+    title: "ఫంగల్ సెప్సిస్",
+    description:
+      "పెద్ద శస్త్రచికిత్సలు, ICU చికిత్స కారణంగా రక్తంలో Candida Fungal Infection (Fungal Sepsis) వచ్చింది. Anidulafungin వంటి ఖరీదైన Anti-Fungal ఇంజెక్షన్లతో చికిత్స అందించారు.",
+    icon: <Thermometer className="w-5 h-5 text-purple-600" />
+  },
+
+  {
+    date: "జూన్ 23 - 25, 2026",
+    title: "రక్తం ఎక్కించడం",
+    description:
+      "తీవ్ర బలహీనత, రక్తహీనత, Sodium & Potassium తగ్గిపోవడంతో Rohini Hospital లో Blood Transfusion మరియు IV Fluids ఇచ్చి ప్రాణాపాయం నుండి బయటపడ్డాడు.",
+    icon: <Activity className="w-5 h-5 text-rose-500" />
+  },
+
+  {
+    date: "జూలై 20, 2026",
+    title: "NIMS లో కొత్త ఆశ",
+    description:
+      "పరిస్థితి విషమించి బరువు గణనీయంగా తగ్గడంతో NIMS Surgical Gastroenterology Department లో చేర్చారు. వెంటనే Surgery చేయడం ప్రమాదకరమని భావించి Nutritional Rehabilitation ప్రారంభించారు.",
+    icon: <Hospital className="w-5 h-5 text-teal-600" />
+  },
+
+  {
+    date: "జూలై 20 - 29, 2026",
+    title: "Nutrition Recovery Phase",
+    description:
+      "TPN Nutrition, Electrolyte Correction, High Protein Diet, Distal Refeeding, Stoma Care ద్వారా శరీరాన్ని మళ్లీ బలంగా తయారు చేసే చికిత్స అందించారు. Sodium, Potassium స్థాయిలు మెరుగయ్యాయి.",
+    icon: <Syringe className="w-5 h-5 text-green-600" />
+  },
+
+  {
+    date: "జూలై 29, 2026",
+    title: "NIMS నుండి డిశ్చార్జ్",
+    description:
+      "ప్రస్తుతం Infection అదుపులో ఉంది. Stoma బాగా పనిచేస్తోంది. ఇంట్లో High Protein Diet, Medicines, Distal Refeeding, Weekly Follow-up కొనసాగించాలని NIMS వైద్యులు సూచించారు.",
+    icon: <HeartHandshake className="w-5 h-5 text-emerald-600" />
+  },
+
+  {
+    date: "ఇప్పుడు...",
+    title: "తదుపరి లక్ష్యం - Stoma Reversal",
+    description:
+      "ప్రస్తుతం Siddharth కి మంచి Nutrition, Weight Gain, Protein Levels, Electrolytes సాధారణ స్థాయికి రావడం అత్యంత ముఖ్యమైనది. శరీరం పూర్తిగా కోలుకున్న తర్వాత మాత్రమే వైద్యులు Stoma Reversal Surgery గురించి నిర్ణయం తీసుకుంటారు.",
+    icon: <Hospital className="w-5 h-5 text-indigo-600" />
+  }
+];
 
   return (
     <section className="bg-white rounded-2xl shadow-lg p-6 md:p-10 border border-gray-100">
