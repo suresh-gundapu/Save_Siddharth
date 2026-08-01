@@ -1,7 +1,7 @@
 {
     "stats": {
-    "totalReceived": 111800,
-    "totalSpent": 72757
+    "totalReceived": 124100,
+    "totalSpent": 76057
   },
   "expensesList": [
   { "id": 1, "date": "20 Jul 2026", "description": "Medical Bill 1 (NIMS)", "amount": 3735 },
@@ -18,7 +18,9 @@
   { "id": 12, "date": "30 Jul 2026", "description": "Peptamen Powder & Stoma Bags", "amount": 2000 },
   { "id": 13, "date": "30 Jul 2026", "description": "Peptamen & Stoma Bag Balance Payment", "amount": 980 },
   { "id": 14, "date": "30 Jul 2026", "description": "Food Expenses", "amount": 200 },
-  { "id": 15, "date": "31 Jul 2026", "description": "NIMS Hospital Discharge & Medical Expenses", "amount": 32250 }
+  { "id": 15, "date": "31 Jul 2026", "description": "NIMS Hospital Discharge & Medical Expenses", "amount": 32250 },
+  { "id": 16, "date": "01 Aug 2026", "description": "Stoma Bags, Medicines, Fruits & Daily Medical Needs", "amount": 3300 }
+
 ],
 
   "donorsList": [

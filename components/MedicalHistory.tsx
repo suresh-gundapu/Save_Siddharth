@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Hospital, Activity, HeartCrack, AlertCircle, Syringe, FileWarning } from 'lucide-react';
+import { Hospital, Activity, HeartCrack, AlertCircle, Syringe, FileWarning , HeartHandshake,ScanLine} from 'lucide-react';
 
 export default function MedicalHistory() {
   const [lang, setLang] = useState<'te' | 'en'>('te');
@@ -11,6 +11,19 @@ export default function MedicalHistory() {
   };
 
   const historyData = [
+    {
+  id: 0,
+  date: "Childhood / Infancy",
+  title_te: "చిన్ననాటి పేగుల శస్త్రచికిత్స చరిత్ర",
+  title_en: "Childhood Intestinal Surgery History",
+  hospital_te: "పూర్వ వైద్య చరిత్ర",
+  hospital_en: "Past Medical & Surgical History",
+  icon: <HeartHandshake className="w-5 h-5 text-pink-600" />,
+  content_te:
+    "సిద్ధార్థ్‌కు పుట్టినప్పటి నుంచే పేగులకు సంబంధించిన తీవ్రమైన సమస్య చరిత్ర ఉంది. పుట్టిన తర్వాత మలం రాకపోవడంతో కేవలం 5 రోజుల వయసులోనే పేగులకు Ileostomy చేసి Stoma ఏర్పాటు చేశారు. అనంతరం సుమారు 10 నెలల వయసులో Stoma Reversal Surgery చేసి పేగులను తిరిగి కలిపారు. ఈ చిన్ననాటి abdominal surgeries అతని Past Surgical History లో ముఖ్యమైన భాగంగా తరువాతి వైద్య చికిత్సల సమయంలో నమోదు చేశారు.",
+  content_en:
+    "Siddharth has a significant history of intestinal surgery dating back to infancy. After failure to pass stool following birth, an Ileostomy with stoma formation was performed when he was approximately 5 days old. At around 10 months of age, he subsequently underwent Stoma Reversal Surgery with restoration of intestinal continuity. This childhood abdominal surgical history remained an important part of his past surgical history during his later treatment."
+},
   {
     id: 1,
     date: "14 - 15 May 2026",
@@ -107,9 +120,22 @@ export default function MedicalHistory() {
   content_en:
     "Following multiple abdominal surgeries complicated by Enterocutaneous Fistula, Anastomotic Dehiscence and Loop Jejunostomy, the patient was admitted to the Surgical Gastroenterology Department at NIMS. CT Abdomen & Pelvis, laboratory investigations and complete clinical evaluation were performed. Severe hyponatremia (125 mmol/L) and hypokalemia (2.2 mmol/L) were corrected. Due to high surgical risk, doctors opted for conservative management with nutritional rehabilitation, high-protein diet, distal refeeding, electrolyte correction and comprehensive stoma care."
 },
-
 {
   id: 8,
+  date: "July 2026 - During NIMS Admission",
+  title_te: "CT Abdomen & Pelvis మరియు వైద్య పరీక్షలు",
+  title_en: "CT Abdomen & Pelvis & Medical Evaluation",
+  hospital_te: "నిమ్స్ హాస్పిటల్ - Surgical Gastroenterology",
+  hospital_en: "NIMS Hospital - Surgical Gastroenterology",
+  icon: <ScanLine className="w-5 h-5 text-cyan-600" />,
+  content_te:
+    "NIMS లో చేరిన తరువాత పొత్తికడుపు పరిస్థితిని అంచనా వేయడానికి CT Abdomen & Pelvis findings ను పరిశీలించారు. CT లో Liver ఎడమ భాగం దిగువ ప్రాంతంలో సుమారు 76 × 35 × 53 mm పరిమాణంలో Loculated Collection కనిపించింది. కొన్ని Small Bowel Loops fluid-filled గా ఉండటంతో పాటు Bowel Wall Edema కనిపించింది. Large Bowel లో Patchy Enhancement, పొత్తికడుపులో Mild Free Fluid మరియు Anterior Abdominal Wall లో Air Pockets కనిపించాయి. Distal Ileal Loop ప్రాంతంలో suspicious communication ఉన్నట్లు CT findings లో పేర్కొన్నారు. అదనంగా రెండు వైపులా Moderate Pleural Effusion కనిపించింది. Admission సమయంలో ముఖ్యంగా Sodium 125 mmol/L మరియు Potassium 2.2 mmol/L వరకు తగ్గిన తీవ్రమైన Electrolyte Imbalance కూడా గుర్తించారు. NIMS లో Conservative Management, Electrolyte Correction, Nutritional Rehabilitation, High-Protein/High-Calorie Nutrition, Stoma Care మరియు Distal Refeeding కొనసాగించారు. చికిత్స అనంతరం Sodium 139 mmol/L మరియు Potassium 3.6 mmol/L వరకు మెరుగయ్యాయి. Clinical condition స్థిరపడటం, oral intake మెరుగుపడటం, fever/sepsis evidence లేకపోవడం మరియు stoma healthy & functioning గా ఉండటంతో discharge చేసి nutritional rehabilitation కొనసాగిస్తూ Surgical Gastroenterology follow-up కు రావాలని సూచించారు.",
+  content_en:
+    "During the NIMS admission, CT Abdomen & Pelvis findings were reviewed to assess the postoperative abdominal condition. Imaging showed a loculated collection measuring approximately 76 × 35 × 53 mm beneath the left hepatic region. Fluid-filled small bowel loops with bowel-wall edema were noted, along with patchy enhancement of the large bowel, mild free intraperitoneal fluid and air pockets in the anterior abdominal wall. A suspicious communication involving the distal ileal loop was also described. Moderate bilateral pleural effusion was additionally noted. Laboratory evaluation at admission demonstrated significant electrolyte abnormalities, particularly Sodium of 125 mmol/L and Potassium of 2.2 mmol/L. Management at NIMS included conservative treatment, correction of electrolytes, nutritional rehabilitation, high-protein/high-calorie nutritional support, stoma care and distal refeeding. Following treatment, Sodium improved to 139 mmol/L and Potassium to 3.6 mmol/L. With improved oral intake, stable clinical condition, no evidence of ongoing sepsis, and a healthy functioning stoma, the patient was discharged with advice to continue nutritional rehabilitation and follow up with Surgical Gastroenterology."
+},
+
+{
+  id: 9,
   date: "29 July 2026",
   title_te: "నిమ్స్ నుండి డిశ్చార్జ్",
   title_en: "Discharge from NIMS",
