@@ -20,7 +20,7 @@ export default function MedicalHistory() {
   hospital_en: "Past Medical & Surgical History",
   icon: <HeartHandshake className="w-5 h-5 text-pink-600" />,
   content_te:
-    "సిద్ధార్థ్‌కు పుట్టినప్పటి నుంచే పేగులకు సంబంధించిన తీవ్రమైన సమస్య చరిత్ర ఉంది. పుట్టిన తర్వాత మలం రాకపోవడంతో కేవలం 5 రోజుల వయసులోనే పేగులకు Ileostomy చేసి Stoma ఏర్పాటు చేశారు. అనంతరం సుమారు 10 నెలల వయసులో Stoma Reversal Surgery చేసి పేగులను తిరిగి కలిపారు. ఈ చిన్ననాటి abdominal surgeries అతని Past Surgical History లో ముఖ్యమైన భాగంగా తరువాతి వైద్య చికిత్సల సమయంలో నమోదు చేశారు.",
+    "సిద్ధార్థ్‌కు పుట్టినప్పటి నుంచే పేగులకు సంబంధించిన తీవ్రమైన సమస్య చరిత్ర ఉంది. పుట్టిన తర్వాత మలం రాకపోవడంతో కేవలం 5 రోజుల వయసులోనే పేగులకు Ileostomy చేసి Stoma ఏర్పాటు చేశారు. అనంతరం సుమారు 10 నెలల వయసులో Stoma Reversal Surgery చేసి పేగులను తిరిగి కలిపారు. ఈ చిన్ననాటి abdominal surgeries అతని Past Surgical History లో ముఖ్యమైన భాగంగా తరువాతి వైద్య చికిత్సల సమయంలో నమోదు చేశారు.అప్పటి నుండి పేగుల్లో Adhesions (అతుక్కుపోవడం) వచ్చే ప్రమాదం ఎక్కువగా ఉంది.",
   content_en:
     "Siddharth has a significant history of intestinal surgery dating back to infancy. After failure to pass stool following birth, an Ileostomy with stoma formation was performed when he was approximately 5 days old. At around 10 months of age, he subsequently underwent Stoma Reversal Surgery with restoration of intestinal continuity. This childhood abdominal surgical history remained an important part of his past surgical history during his later treatment."
 },
